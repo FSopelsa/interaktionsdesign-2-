@@ -15,7 +15,7 @@ html {
 
 body {
 	height: 100%;
-    background-color: rgb(47, 65, 52);
+    background-color: rgb(248, 244, 239);
     color: #000000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 	display: grid;
@@ -23,18 +23,21 @@ body {
 	grid-template-rows: min-content auto min-content;
 	grid-template-areas:
 		".	    header	."
-		".	    main	."
+		"aside   main	."
 		"footer	footer	footer";
 }
 
 header {
 	grid-area: header;
 	background-color: rgb(204, 236, 206);
-	box-shadow: 5px 5px 10px rgb(0, 2, 8), -5px 5px 10px rgb(10, 1, 1);
 	margin-bottom: 10px;
 }
 header h1 {
 	text-align: center;
+}
+
+aside {
+	grid-area: aside;
 }
 
 main {
@@ -63,7 +66,6 @@ footer {
 
 a {
 	color: rgb(0, 104, 240);
-	background-color: burlywood;
 }
 a:hover, a:active {
 	background-color: rgb(231, 15, 69);
